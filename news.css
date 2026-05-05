@@ -1,0 +1,77 @@
+body {
+  font-size: 19px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #232B36;
+  color: #C4DEF8;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #3D2B6C;
+  padding: 10px;
+}
+
+nav a {
+  color: #C4DEF8;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.news-feed {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.news-item {
+  display: flex;
+  background: #3D2B6C;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.news-item img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.news-item-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+}
+
+/* 🔥 ОСЬ ТУТ ВИПРАВЛЕННЯ */
+.news-item h3 {
+  color: #9aa0ff; /* світліший і читабельніший */
+  margin: 0;
+}
+
+.news-item p {
+  color: #C4DEF8;
+  margin: 0;
+}
+
+/* 📱 простий адаптив */
+@media (max-width: 768px) {
+  .news-item {
+    flex-direction: column;
+  }
+
+  .news-item img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,73 @@
+body {
+  font-size: 19px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #232B36;
+  color: #E6F0FF;
+}
+
+h2 {
+  color: #9aa0ff;
+}
+
+.week h1 {
+  color: #E6F0FF !important;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #2a1f4d;
+  padding: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.week {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.week-badge {
+  display: inline-block;
+  background: #4c00b0;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.week h1 {
+  color: #9aa0ff;
+  margin-bottom: 20px;
+}
+
+.week-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+}
+
+.week-desc {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .week-img {
+    max-width: 100%;
+  }
+}

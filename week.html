@@ -2,32 +2,119 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Гра тижня</title>
   <link rel="stylesheet" href="week.css">
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Головна</a>
-  <a href="nav.html">Навігація</a>
-  <a href="news.html">Новини</a>
+<nav class="top-nav">
+
+  <div class="logo">
+    Gaming Universe
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">Головна</a>
+    <a href="nav.html">Навігація</a>
+    <a href="news.html">Новини</a>
+  </div>
 </nav>
 
-<main class="week">
+<header class="hero">
 
-  <h1>Гра тижня</h1>
+  <div class="hero-overlay">
 
-  <h2>Naraka: Bladepoint</h2>
+    <div class="week-badge">
+      GAME OF THE WEEK
+    </div>
 
-  <img src="./images/naraka (1).webp" class="week-img">
+    <h1>Гра тижня</h1>
 
-  <p class="week-desc">
-    Naraka: Bladepoint — це динамічний battle royale з акцентом на ближній бій
-    та унікальні здібності персонажів. Гра поєднує елементи бойових мистецтв,
-    паркур та швидкий геймплей, де важливі реакція і тактика.
-    Завдяки красивій графіці та різноманітним персонажам, вона стала популярною
-    серед гравців по всьому світу.
-  </p>
+    <a
+      href="https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/"
+      target="_blank"
+      class="game-title">
+      Naraka: Bladepoint
+    </a>
+
+    <p class="hero-text">
+      Динамічний battle royale з бойовими мистецтвами,
+      паркуром та епічними битвами.
+    </p>
+
+  </div>
+
+</header>
+
+<main class="week-container">
+
+  <section class="week-main">
+
+    <img src="./images/naraka (1).webp" class="week-img">
+
+    <div class="week-info">
+
+      <h2>Про гру</h2>
+
+      <p>
+        Naraka: Bladepoint — це battle royale нового покоління,
+        де акцент зроблений на ближньому бою, комбо-атаках та мобільності.
+        Гравці використовують мечі, списи, магію та гак-кішку,
+        щоб пересуватись картою та вести видовищні бої.
+      </p>
+
+      <div class="week-buttons">
+
+        <a
+          href="https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/"
+          target="_blank"
+          class="steam-btn">
+          Steam
+        </a>
+
+        <a
+          href="#trailer"
+          class="trailer-btn">
+          Трейлер
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="trailer-section" id="trailer">
+
+    <h2>Офіційний трейлер</h2>
+
+    <iframe
+      src="https://www.youtube.com/embed/-X8VC7d6Sx4"
+      allowfullscreen>
+    </iframe>
+
+  </section>
+
+  <section class="features">
+
+    <div class="feature-card">
+      <h3>Ближній бій</h3>
+      <p>Система комбо та контратак.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Паркур</h3>
+      <p>Швидке переміщення по карті.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Герої</h3>
+      <p>Унікальні здібності персонажів.</p>
+    </div>
+
+  </section>
 
 </main>
 

@@ -1,20 +1,151 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<title>Проходження</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проходження</title>
+  <link rel="stylesheet" href="1nav.css">
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Головна</a>
-  <a href="nav.html">Навігація</a>
-  <a href="news.html">Новини</a>
+<nav class="top-nav">
+  <div class="logo">
+    Gaming Universe
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">Головна</a>
+    <a href="nav.html">Навігація</a>
+    <a href="week.html">Гра тижня</a>
+    <a href="news.html">Новини</a>
+  </div>
+
 </nav>
+<header class="small-header">
+  <h1>Проходження</h1>
+</header>
 
-<h1>Проходження</h1>
-<p>Колись тут щось буде</p>
+<div class="guide-menu">
 
+  <a href="#elden">Elden Ring</a>
+  <a href="#cyberpunk">Cyberpunk</a>
+  <a href="#wukong">Wukong</a>
+  <a href="#re4">Resident Evil 4</a>
+  <a href="#gta">GTA V</a>
+  <a href="#hogwarts">Hogwarts</a>
+
+</div>
+
+<main class="guides-container">
+
+  <section class="guide-row" id="elden">
+    <div class="guide-text">
+      <h2>Elden Ring</h2>
+      <p>
+        Повне проходження Elden Ring:
+        боси, зброя, прокачка та секретні локації.
+      </p>
+    </div>
+
+    <iframe
+      src="https://www.youtube.com/embed/K_03kFqWfqs"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section class="guide-row" id="cyberpunk">
+    <div class="guide-text">
+      <h2>Cyberpunk 2077</h2>
+      <p>
+        Найкращі білди, кіберімпланти та проходження місій.
+      </p>
+    </div>
+
+    <iframe
+      src="https://www.youtube.com/embed/aceFr4K9D-Y"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section class="guide-row" id="wukong">
+    <div class="guide-text">
+      <h2>Black Myth Wukong</h2>
+      <p>
+        Гайд по босах та здібностях головного героя.
+      </p>
+    </div>
+
+    <iframe
+      src="https://www.youtube.com/embed/1xGiPUeevCM"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section class="guide-row" id="re4">
+    <div class="guide-text">
+      <h2>Resident Evil 4</h2>
+      <p>
+        Повне сюжетне проходження та секрети гри.
+      </p>
+    </div>
+
+    <iframe
+      src="https://www.youtube.com/embed/4s8iN8x4l0E"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section class="guide-row" id="gta">
+    <div class="guide-text">
+      <h2>GTA V</h2>
+      <p>
+        Місії, приховані місця та цікаві секрети Los Santos.
+      </p>
+    </div>
+
+    <iframe
+      src="https://www.youtube.com/embed/VjZ5tgjPVfU"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section class="guide-row" id="hogwarts">
+    <div class="guide-text">
+      <h2>Hogwarts Legacy</h2>
+      <p>
+        Магічні заклинання, прокачка та проходження.
+      </p>
+    </div>
+
+    <iframe
+      src="https://www.youtube.com/embed/nA6hCG0JH8M"
+      allowfullscreen>
+    </iframe>
+  </section>
+</main>
+<button id="topBtn">⬆</button>
+
+<script>
+  const topBtn = document.getElementById("topBtn");
+
+  window.onscroll = function () {
+
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      topBtn.style.display = "flex";
+    } else {
+      topBtn.style.display = "none";
+    }
+
+  };
+
+  topBtn.onclick = function () {
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+  };
+</script>
 </body>
 </html>
